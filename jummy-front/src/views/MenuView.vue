@@ -22,10 +22,13 @@ import Menu from '../components/Menu.vue'
     </div>
   </main>
 </template>
+
 <script>
 import { ref, computed } from 'vue';
+import Menu from '../components/Menu.vue';
 
 export default {
+  components: { Menu },
   setup() {
     const busqueda = ref('');
     const restaurantes = ref([
